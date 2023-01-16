@@ -8,7 +8,7 @@ module.exports = {
 
  const ping = new MessageEmbed()
         .setColor('#fff')
-        .setDescription("Latencia de putin")
+        .setDescription(`${Math.round(client.ws.ping)}ms`)
  message.reply({
    embeds:[ping]
  })
